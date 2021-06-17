@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    tools:context=".Application_view_Activity">
+
+    <EditText
+        android:id="@+id/HallName"
+        android:layout_width="259dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:hint="Hall Name"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <EditText
+        android:id="@+id/HallCapacity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Status"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/HallName"
+        app:layout_constraintTop_toBottomOf="@+id/HallName" />
+
+    <EditText
+        android:id="@+id/Rent"
+        android:layout_width="137dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="CGPA"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/HallCapacity"
+        app:layout_constraintTop_toBottomOf="@+id/HallCapacity" />
+
+    <EditText
+        android:id="@+id/floors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Degree"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/Rent"
+        app:layout_constraintTop_toBottomOf="@+id/Rent" />
+
+    <EditText
+        android:id="@+id/location"
+        android:layout_width="262dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="CNIC 34101-xxxxxxxx-x"
+        android:inputType="textMultiLine"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/floors" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="312dp"
+        android:layout_height="53dp"
+        android:background="#6B0ACC"
+        android:gravity="center"
+        android:text="ADD APPLICATION"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="45dp"
+        tools:layout_editor_absoluteY="30dp" />
+
+    <Button
+        android:id="@+id/hallAddAndUpdateBtn"
+        android:layout_width="136dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginLeft="112dp"
+        android:layout_marginTop="40dp"
+        android:text="FINISH"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/location" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".One_Application_Activity">
+
+    <TextView
+        android:id="@+id/txtx"
+        android:layout_width="87dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="52dp"
+        android:text="Name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtx1"
+        android:layout_width="84dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="32dp"
+        android:text="Status"
+        app:layout_constraintStart_toStartOf="@+id/txtx"
+        app:layout_constraintTop_toBottomOf="@+id/txtx" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="82dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="32dp"
+        android:text="Degree"
+        app:layout_constraintStart_toStartOf="@+id/txtx1"
+        app:layout_constraintTop_toBottomOf="@+id/txtx1" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="81dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="32dp"
+        android:text="CGPA"
+        app:layout_constraintStart_toStartOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/Hall_Name"
+        android:layout_width="146dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/txtx"
+        app:layout_constraintTop_toTopOf="@+id/txtx" />
+
+    <TextView
+        android:id="@+id/hall_capacity"
+        android:layout_width="141dp"
+        android:layout_height="29dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/Hall_Name"
+        app:layout_constraintTop_toTopOf="@+id/txtx1" />
+
+    <TextView
+        android:id="@+id/hall_floors"
+        android:layout_width="144dp"
+        android:layout_height="30dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/hall_capacity"
+        app:layout_constraintTop_toTopOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/hall_rent"
+        android:layout_width="146dp"
+        android:layout_height="30dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/hall_floors"
+        app:layout_constraintTop_toTopOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="78dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="36dp"
+        android:text="CNIC"
+        app:layout_constraintStart_toStartOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/hall_location"
+        android:layout_width="192dp"
+        android:layout_height="30dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/hall_rent"
+        app:layout_constraintTop_toTopOf="@+id/textView13" />
+</androidx.constraintlayout.widget.ConstraintLayout>
